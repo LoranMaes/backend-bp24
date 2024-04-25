@@ -1,0 +1,16 @@
+{
+  "name": "bun-backend-example-loran_maes-bp24",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "start": "bun --watch run index.ts",
+    "build": "bun build",
+    "test": "bun test"
+  }
+}
