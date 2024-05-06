@@ -41,8 +41,7 @@ router.get("/", async (ctx, next) => {
 
 router.get("/users", (ctx, next) => {
   const users = database.users.map((user) => {
-    user.password = undefined;
-    return user;
+    return { id: user.id, name: user.name, email: user.email };
   });
   if (!users) {
     ctx.status(404).json({ error: "Geen gebruikers gevonden" });
