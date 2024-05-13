@@ -1,1 +1,1 @@
-bun create elysia app
+bunx create-hono
